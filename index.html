@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Météo</h1>
+    </header>
+    <section>
+        <!-- Rechercher une ville ou géolocaliser -->
+        <div id="recherche">
+            <form>
+                <label for="ville">Ville:</label>
+                <input type="text" id="ville">
+                <button type="submit">Rechercher</button>
+                <button type="reset">Remise à zéro</button>
+                <button type="button" id="geoloc">Géolocaliser</button>
+            </form>
+        </div>
+        <!-- Afficher la météo -->
+        <div id="resultats"></div>
+    </section>
+    <footer>
+        Météo by Benoît &copy; 2021
+    </footer>
+    <script src="assets/js/meteo.js"></script>
+</body>
+</html>
