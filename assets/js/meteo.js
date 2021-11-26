@@ -19,6 +19,7 @@ const rechercherMeteo = () => {
     .then((resp) => resp.json())
     .then((resultat) => {
       resultat.list.forEach((jour) => {
+        resultatsDiv.innerHTML = '';
         createCard(jour, resultatsDiv);
       });
     })
